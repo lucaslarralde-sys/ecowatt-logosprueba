@@ -1,12 +1,86 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecowatt — Ingeniería Ambiental</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecowatt — sitio base</title>
+  <meta name="description" content="Starter limpio con hero de video, bandas y paleta Ecowatt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__wrap">
+      <a class="header__brand" href="#">
+        <img src="/logo/logo-ecowatt.png" alt="Ecowatt" />
+      </a>
+      <nav class="header__nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="header__cta" href="#contacto">Consultar ahora →</a>
+    </div>
+  </header>
+
+  <!-- HERO con video y degradado -->
+  <section class="hero" aria-label="Video de aguas y tratamiento">
+    <video autoplay muted loop playsinline poster="/img/banda-agua.jpg">
+      <source src="/video/hero.mp4" type="video/mp4" />
+      <!-- Si no carga el video, quedará el poster -->
+    </video>
+    <div class="hero__content">
+      <div class="kicker">Ingeniería Ambiental</div>
+      <h1 class="hero__title">Mejora del <span style="color:#3DE282">desempeño</span> ambiental</h1>
+      <p class="hero__lead">
+        Soluciones integrales que mejoran tu productividad y reducen emisiones a través de diseños,
+        operación y performance ambiental.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#servicios">Conocer más</a>
+        <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banda blanca para descanso visual -->
+  <section class="band band--white" aria-hidden="true"></section>
+
+  <!-- NUEVA Banda con tu imagen -->
+  <section class="band band--image" aria-label="Textura de agua de Ecowatt"></section>
+
+  <!-- Cards de servicios sobre blanco -->
+  <section id="servicios" class="section">
+    <div class="cards">
+      <article class="card">
+        <div class="card__icon">💧</div>
+        <h3>Aguas & Efluentes</h3>
+        <p>Diseño, operación y optimización de plantas.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">📈</div>
+        <h3>Industria & Productividad</h3>
+        <p>Menores costos operativos con eficiencia energética.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">🌿</div>
+        <h3>Gestión Ambiental</h3>
+        <p>Monitoreo, auditorías e indicadores normativos.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">🔆</div>
+        <h3>Energías Renovables</h3>
+        <p>Fotovoltaico y autoconsumo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Banda azul inferior -->
+  <section class="band band--blue" aria-hidden="true"></section>
+
+</body>
 </html>
